@@ -16,20 +16,25 @@
     height: 150px;
     width: 100%;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     
 }
-.menu ul{
+.navigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+.navigation ul{
     display: flex;
     list-style-type:none;
     width: 1000px;
     justify-content: space-between;
-}
 
-.menu ul li a{
-    text-decoration: none;
-    color: var(--menu-color);
-    font-size: 22px;
-    font-weight: 700;
+    li a{
+        text-decoration: none;
+        color: var(--menu-color);
+        font-size: 22px;
+        font-weight: 700;
+    }
 }

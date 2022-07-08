@@ -40,21 +40,64 @@ body {
   height: 150px;
   width: 100%;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 
-.menu ul {
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.navigation ul {
   display: flex;
   list-style-type: none;
   width: 1000px;
   justify-content: space-between;
 }
 
-.menu ul li a {
+.navigation ul li a {
   text-decoration: none;
   color: var(--menu-color);
   font-size: 22px;
   font-weight: 700;
+}
+
+.container {
+  width: 1200px;
+  height: auto;
+}
+
+.main {
+  width: 100%;
+  height: auto;
+  background-color: #1c1c1c;
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.main__content {
+  width: 100%;
+  height: auto;
+}
+
+.main__content ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+}
+
+.main__content ul li {
+  width: 250px;
+  text-align: center;
+  padding: 20px;
+}
+
+.title__comics {
+  color: var(--primary-color);
 }
 

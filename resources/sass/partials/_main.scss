@@ -1,0 +1,28 @@
+.main{
+    width: 100%;
+    height: auto;
+    background-color: #1c1c1c;
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+}
+.main__content{
+    width: 100%;
+    height: auto;
+
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        list-style-type:none;
+        li{
+            width: 250px;
+            text-align: center;
+            padding: 20px;
+        }
+    }
+}
+.title__comics{
+    color: var(--primary-color);
+}

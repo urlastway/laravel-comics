@@ -14,5 +14,26 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    $comics = config('comics');
+
+    $comicses = [
+        'comic book' => [],
+        'graphic novel' => [],
+    ];
+    /*
+    $comic_book = [];
+    $graphic_novel = [];
+    */
+    
+    foreach($comics as $prodotto){
+        $comicses[$prodotto['type']][] = $prodotto;
+        /*if($prodotto['type'] === 'comic book'){
+            $comic_book[] = $prodotto;
+        }
+        elseif($prodotto['type'] === 'graphic novel'){
+            $graphic_novel[] = $prodotto;
+        } */
+    }
+    return view('home', compact('comics'));
 });
+
