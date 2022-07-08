@@ -1,0 +1,60 @@
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;
+
+400;700&display=swap);:root {
+  --primary-color: #fff;
+  --secondary-color: #0282f9;
+  --third-color: #1c1c1c;
+  --menu-color: #464646;
+  --footer-text-color: #959595;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.header__top {
+  height: 50px;
+  width: 100%;
+  background-color: var(--secondary-color);
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+.left_text {
+  margin-right: 20px;
+}
+
+.left_text,
+.right_text {
+  color: #fff;
+}
+
+.menu {
+  height: 150px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu ul {
+  display: flex;
+  list-style-type: none;
+  width: 1000px;
+  justify-content: space-between;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: var(--menu-color);
+  font-size: 22px;
+  font-weight: 700;
+}
+
