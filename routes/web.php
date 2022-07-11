@@ -35,5 +35,15 @@ Route::get('/', function () {
         } */
     }
     return view('home', compact('comics'));
+
+    
 });
+
+Route::get('/prodotto/{id}', function ($id) {
+    $comics = config('comics');
+    if($id > count($comics)){
+        abort(404);
+    }
+    dd($comics[$id]);
+})->where('id', '[0-9]+');
 
