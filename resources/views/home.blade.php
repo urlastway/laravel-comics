@@ -10,9 +10,7 @@
             <div class="main__content">
                 <ul>
                     @foreach ($comics as $comic)
-                        <li><img src="{{$comic['thumb']}}" alt="">
-                        <h5 class="title__comics">{{$comic['title']}}</h5>
-                        </li>
+                        <x-card-comics class="card-comics" :thumb="$comic['thumb']" :title="$comic['title']"/>
                     @endforeach
                 </ul>
             </div>
