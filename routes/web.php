@@ -44,6 +44,7 @@ Route::get('/prodotto/{id}', function ($id) {
     if($id > count($comics)){
         abort(404);
     }
-    dd($comics[$id]);
+    $prodotto = $comics[$id];
+    return view('product', compact('prodotto'));
 })->where('id', '[0-9]+');
 
